@@ -6,16 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Anna Trojanowska - Recruitment task</title>
     <link rel="stylesheet" type="text/css" href="src/css/main.css">
+    <script defer src="src/js/main.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div id="container">
-        <div id="first">
+    <section class="container image-text-section">
+        <div class="image-text-section__image">
+            <img src="images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_480.jpg"landscape image">
        </div>
-        <div id="second">
-            <h1>Lorem Ipsum</h1>
+        <div class="image-text-section__texts">
+            <h1 class="image-text-section__heading">Lorem Ipsum</h1>
             <p>Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
-            <button>Button</button>
+            <button class="image-text-section__button">Button</button>
+            
+            
         </div>
-    </div>
+        <div class="image-text-section__texts popup">
+            <span class="popup__span">
+            <h1 class="image-text-section__heading popup__heading">
+                Alert!
+            </h1>
+                <button class="popup-close-button">&times;</button>
+            </span>
+           <p class="popup__content">
+                You have clicked <b>X times</b> to related button.
+           </p>
+        </div>
+        <div class="overlay"></div>
+        
+    </section>
 </body>
