@@ -17,22 +17,22 @@
         <div class="image-text-section__texts">
             <h1 class="image-text-section__heading">Lorem Ipsum</h1>
             <p>Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
-            <button class="image-text-section__button">Button</button>
+            <button data-modal-target="#popup" class="image-text-section__button">Button</button>
             
             
         </div>
-        <div class="image-text-section__texts popup">
+        <div class="image-text-section__texts popup" id="popup">
             <span class="popup__span">
             <h1 class="image-text-section__heading popup__heading">
                 Alert!
             </h1>
-                <button class="popup-close-button">&times;</button>
+                <button data-close-button class="popup-close-button">&times;</button>
             </span>
            <p class="popup__content">
                 You have clicked <b>X times</b> to related button.
            </p>
         </div>
-        <div class="overlay"></div>
+        <div id="overlay"></div>
         
     </section>
 </body>

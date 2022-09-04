@@ -59,18 +59,24 @@
     height: 48px;
     background: #E4C1AE;
     border-radius: 32px;
+    cursor: pointer;
 }
 
 .popup{
     position: fixed;
     top:50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(0);
+    transition:200ms ease-in-out;
     z-index: 10;
     background-color: #fff;
     width: 920px;
     max-width: 80%;
     height: 210px;
+}
+
+.popup.active{
+    transform: translate(-50%,-50%) scale(1);
 }
 
 .popup__heading{
@@ -82,7 +88,7 @@
     padding: 46px;
     border: none;
     font-size: 20px;
-    
+    cursor: pointer;
     background-color: #fff;
 }
 
@@ -102,11 +108,18 @@
     
     background-color: #fff;
 }
-.overlay{
+#overlay{
     position: fixed;
+    opacity: 0;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0, .5);
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
 }
