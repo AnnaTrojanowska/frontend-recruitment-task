@@ -12,12 +12,12 @@
 <body>
     <section class="container image-text-section">
         <div class="image-text-section__image">
-            <img src="images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_480.jpg"landscape image">
+            <img src="images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_480.jpg" alt="landscape">
        </div>
         <div class="image-text-section__texts">
             <h1 class="image-text-section__heading">Lorem Ipsum</h1>
             <p>Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
-            <button data-modal-target="#popup" class="image-text-section__button">Button</button>
+            <button data-modal-target="#popup" type="button" onclick="buttonClickCounter()" class="image-text-section__button">Button</button>
             
             
         </div>
@@ -29,7 +29,7 @@
                 <button data-close-button class="popup-close-button">&times;</button>
             </span>
            <p class="popup__content">
-                You have clicked <b>X times</b> to related button.
+                You have clicked <b><a id="clicks"></a> times</b> to related button.
            </p>
         </div>
         <div id="overlay"></div>

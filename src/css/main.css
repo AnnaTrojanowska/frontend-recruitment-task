@@ -18,7 +18,7 @@
 
 .image-text-section__image{
     width: 505px;
-    height: 330px;
+    height: auto;
     position: absolute;
     top: 96px;
     left: 230px;
@@ -27,7 +27,7 @@
 .image-text-section__texts{
     position: absolute;
     width: 380px;
-    height: 96px;
+    height: auto;
     left: calc(50% - 380px/2 + 300px);
     top: calc(50% - 96px/2 - 222px);
     font-family: 'Roboto';
@@ -104,7 +104,7 @@
     padding-left: 95px;
     background-color: #fff;
 }
-.popup__content b{
+.popup__content b, a{
     
     background-color: #fff;
 }
